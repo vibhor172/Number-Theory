@@ -1,6 +1,6 @@
 Calculating divisors upto a particular number Lets say N.
 
-//O(N*sqrt(N))
+------->//O(N*sqrt(N))
 
 
 class Solution {
@@ -24,3 +24,23 @@ public:
        return ans;                     
                            }
 };
+
+
+------->//More Optimised Version (iteration on multiples)
+
+O(N*logN)
+
+vector<int>div(n+1)
+for(int i=1;i<=N;i++){
+for(int j=i;j<=N;j+=i){div[j]++;}}
+
+for(int i=1;i<=n;i++){
+cout<<div[j];}
+
+
+------>//Most Optimised Solution
+O()
+
+
+
+
